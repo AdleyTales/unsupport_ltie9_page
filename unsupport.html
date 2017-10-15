@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="/img/favicon.ico">--><!--ico图标-->
+    <title>当前浏览器不被支持</title>
+    <meta name="Keywords" content="">
+    <meta name="Description" content="">
+
+    <!-- 小于ie9浏览器 -->
+    <!--[if lt IE 9]>
+    <script type="text/javascript">
+        var unsupport = true;
+    </script>
+    <![endif]-->
+
+    <script type="text/javascript">
+        if (typeof unsupport == "undefined") {
+            alert("您用的浏览器是比较现代的浏览器！");
+//            location.href = "./index.html";
+        }
+    </script>
+    <link rel="stylesheet" href="css/unsupport.css">
+</head>
+<body>
+    <div id="container">
+        <h1>升级浏览器，升级你的浏览体验</h1>
+        <table class="browsers">
+            <tr>
+                <td>
+                    <a class="clearfix" href="https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd=chrome&rsv_pq=d86cdadd00017264&rsv_t=360aWu2FSRZs7CaIe13bBv6Q3vQ%2Fe6SLCSc936lHSoNSVONIauhlWyIZQ%2Fo&rqlang=cn&rsv_enter=1&rsv_sug3=2&rsv_sug1=1&rsv_sug7=100&rsv_sug2=0&inputT=1475&rsv_sug4=2485" target="_blank">
+                        <img src="images/c1ee40e3d647f1759326ce5bffedd786.png" alt="Download Chrome">
+                        <p>Chrome</p>
+                    </a>
+                </td>
+                <td>
+                    <a class="clearfix" href="http://www.firefox.com.cn/" target="_blank">
+                        <img src="images/3f1ee7a96c140235f365ba793828a3e1.png" alt="Download Firefox">
+                        <p>Firefox</p>
+                    </a>
+                </td>
+                <td>
+                    <a class="clearfix" href="http://www.apple.com/cn/safari/" target="_blank">
+                        <img src="images/52e7c4a8012d645d3fceb38a41f0d12b.png" alt="Download Safari">
+                        <p>Safari</p>
+                    </a>
+                </td>
+                <td>
+                    <a class="clearfix" href="http://www.opera.com/zh-cn" target="_blank">
+                        <img src="images/7e8bf3e5d99c3236c3d41578bb5edd2a.png" alt="Download Opera">
+                        <p>Opera</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <div class="suggestion">
+            <table>
+                <tr>
+                    <td width="34%" align="right">
+                        <img src="images/b450bc65946dc40dfef71065023f9bf5.png" alt="smily suggestion">
+                        <!--<img src="http://temp.im/170x180/F7F6F2/333" alt="占位图标">-->
+                    </td>
+                    <td class="words" colspan="2" width="66%">
+                        <p>您的浏览器好像有点过时了。</p>
+                        <p>为了您正常使用 Coding，建议安装以上现代浏览器。</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer">
+            <img src="images/a042d59d581d72c415d27655ec37be93.png" alt="">
+            <!--<img src="http://temp.im/100x30/F7F6F2/333" alt="占位图标">-->
+            <p>Copyright&nbsp;&nbsp;&copy;&nbsp;&nbsp;2017&nbsp;&nbsp;Coding.net </p>
+        </div>
+    </div>
+
+    <script src="js/unsupport.js"></script>
+
+    <script type="text/javascript">
+        DD_belatedPNG.fix('img');
+    </script>
+
+    <!-- Google Analytics -->
+    <script>
+        var cdn = typeof "https://dn-coding-net-production-static.qbox.me" === 'undefined' ? '' : "https://dn-coding-net-production-static.qbox.me";
+        setTimeout(function () {
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-65952334-1', 'auto');
+            ga('require', 'linkid');
+            ga('send', 'pageview');
+        }, 0)
+    </script>
+</body>
+</html>
